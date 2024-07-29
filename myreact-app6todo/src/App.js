@@ -9,7 +9,7 @@ function TodoList({items}) { // 할 일 목록 출력용
       </ul>
     );
 }
-
+ 
 function App() {
   const [items, setItems] = useState([]);
   const [text, setText] = useState('');
