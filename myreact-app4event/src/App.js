@@ -1,12 +1,14 @@
 import React, {useState} from "react"; // Hook 사용 : {use ...}
 import Subject from "./mydir/Subject";
+import Welcome from "./mydir/Func";
+
 
 // const App = () => {
 function App() {
   const [subject, setSubject] = useState({title:'웹문서', subtitle:'리액트 만세'}); // let도 사용 가능 
   const [friends] = useState([
     {bun:1, irum:'여빈', nai:24},
-    {bun:2, irum:'소희', nai:20}
+    {bun:2, irum:'소희', nai:22}
   ]);
 
   const handelChangePage = () => {
@@ -28,9 +30,17 @@ function App() {
       <Subject 
         title = {subject.title}
         subtitle = {subject.subtitle}
-        onChangePage = {handelChangePage}
+        ChangePage = {handelChangePage}
       />
-      {/* onChangePage : App에서 Subject 컴포넌트로 전달되는 이벤트 핸들러 */}
+      {/* title, subtitle, ChangePage : App에서 Subject 컴포넌트로 전달되는 props */}
+      <br />
+    
+      <Welcome
+      subtitle = {subject.subtitle}
+      friends = {friends}
+      ChangePage = {handelChangePage}
+      />
+
     </div>
   );
 }
