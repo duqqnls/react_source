@@ -5,7 +5,7 @@ function TodoList({items}) { // 할 일 목록 출력용
       <ul>
         {items.map((item) =>( 
           <li key={item.id}>{item.text}</li>
-        ))} 
+        ))}  
       </ul>
     );
 }
