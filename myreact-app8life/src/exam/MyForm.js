@@ -11,7 +11,7 @@ function MyForm() {
         const name = e.target.name; // form 태그 내의 name
         const value = e.target.value;
         setFormData({
-            ...formData,
+            ...formData,            
             [name]:value
         });
     }
