@@ -1,0 +1,39 @@
+/* App.css */
+.container {
+  border: 2px solid #333;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.convert-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: palevioletred;
+  color: white;
+  cursor: pointer;
+}
+
+.convert-button:hover {
+  background-color :palevioletred;
+}

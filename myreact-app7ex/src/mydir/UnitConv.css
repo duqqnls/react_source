@@ -1,0 +1,30 @@
+/* UnitConv.css */
+.cente-container {
+    border: 2px solid pink;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffe6f2;
+    text-align: center;
+  }
+  
+  .output-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .convert-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff66b2;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .convert-button:hover {
+    background-color: #ff3385;
+  }
+  
